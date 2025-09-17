@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Personales - Firebase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📝 Mis Notas</h1>
+            <p>Aplicación personal de notas con Firebase</p>
+        </div>
+
+        <div id="alert-container"></div>
+
+        <div id="user-info" class="user-info">
+            <div>
+                <strong>Usuario:</strong> <span id="user-email"></span>
+            </div>
+            <button id="logout-btn" class="btn btn-secondary">Cerrar Sesión</button>
+        </div>
+
+        <!-- Sección de autenticación -->
+        <div id="auth-section" class="auth-section">
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="tu@email.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Mínimo 6 caracteres" required>
+            </div>
+            
+            <div style="display: flex; gap: 1rem;">
+                <button id="login-btn" class="btn btn-primary" style="flex: 1;">Iniciar Sesión</button>
+                <button id="register-btn" class="btn btn-secondary" style="flex: 1;">Registrarse</button>
+            </div>
+        </div>
+
+        <!-- Sección de notas -->
+        <div id="notes-section" class="notes-section">
+            <div class="add-note-form">
+                <h3 style="margin-bottom: 1rem; color: #333;">➕ Agregar Nueva Nota</h3>
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label for="note-title">Título:</label>
+                    <input type="text" id="note-title" placeholder="Título de la nota" required>
+                </div>
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label for="note-content">Contenido:</label>
+                    <textarea id="note-content" placeholder="Escribe tu nota aquí..." required></textarea>
+                </div>
+                <button id="add-note-btn" class="btn btn-primary">Agregar Nota</button>
+            </div>
+
+            <div id="notes-loading" class="loading" style="display: none;">
+                Cargando notas...
+            </div>
+
+            <div id="notes-container" class="notes-grid"></div>
+        </div>
+    </div>
+
+    <!-- Scripts de Firebase -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.7.0/firebase-app-compat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.7.0/firebase-auth-compat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.7.0/firebase-firestore-compat.min.js"></script>
+    
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
