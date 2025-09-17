@@ -150,36 +150,8 @@ const firebaseConfig = {
 
 ---
 
-## ⌨️ Atajos útiles en la UI
-
-* **Enter** en email → enfoca contraseña.
-* **Enter** en contraseña → intenta iniciar sesión.
-* **Ctrl + Enter** en contenido de la nota → agrega la nota.
-
----
-
-## 🛡️ Buenas prácticas de seguridad
-
-* Usa las **reglas estrictas** recomendadas arriba.
-* No expongas claves privadas (el `apiKey` de Firebase no es secreto, pero protege acceso mediante reglas).
-* Considera habilitar **MFA** en proyectos reales.
-* Valida y escapa contenido de usuario (se usa `escapeHtml` al renderizar).
-
----
-
-## 💸 Costos (modo gratuito)
-
-* Con el plan **Spark** puedes:
-
-  * Auth por email/contraseña sin costo.
-  * Firestore con cuotas gratuitas mensuales (lecturas/escrituras/almacenamiento).
-* Monitorea en **Usage** para evitar límites.
-
----
+## 📹 Video explicativo
 
 
-## 📹 Video explicativo (placeholder)
-
-
-[▶️ Ver video: *URL\_PENDIENTE*](docs/tutorial.mp4)
+[▶️ Ver video:](https://youtu.be/EoJHr9551Ic)
 
