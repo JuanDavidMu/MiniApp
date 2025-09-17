@@ -7,6 +7,13 @@ Aplicación web sencilla para crear, editar, completar y eliminar **notas/tareas
 
 ---
 
+# ⚒️ Integrantes
+
+* Juan David Muñoz
+* Sebastian Perez
+
+---
+
 ## ✨ Funcionalidades
 
 * Registro e inicio de sesión con **email/contraseña**.
